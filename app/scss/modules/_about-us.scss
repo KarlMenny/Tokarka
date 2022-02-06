@@ -1,0 +1,116 @@
+.about-us {
+
+	&__color {
+		background-color: #F2F2F2;
+	}
+
+	&__container {
+		padding-top: 62px;
+	}
+
+	&__img {
+		display: none;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		font-size: 2rem;
+		font-weight: 900;
+		letter-spacing: 0.03em;
+		text-align: center;
+		color: #000;
+	}
+
+	&__background {
+		padding: 45px 70px;
+		background: #303030 url(../images/about-us.jpg) center;
+		background-size: cover;
+	}
+
+	&__text {
+		font-size: 1.0625rem;
+		line-height: 1.35;
+		letter-spacing: 0.02em;
+	}
+
+	&__paragraph {
+		display: block;
+		margin-bottom: 25px;
+	}
+
+	&__allotment {
+		font-weight: 600;
+	}
+
+	&__process {
+		display: none;
+	}
+
+	@media (min-width: 300px) and (max-width: 575px) {
+
+		&__background {
+			padding: 45px 30px;
+		}
+	}
+
+	@media (min-width: 768px) {
+
+		&__background {
+			background: #303030 url(../images/about-us_wide.jpg) center;
+			background-size: cover;
+		}
+
+		&__text {
+			max-width: 600px;
+		}
+	}
+
+	@media (min-width: 992px) {
+
+		&__container {
+			padding: 62px 0 104px;
+		}
+
+		&__process {
+			display: block;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+		&__container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 112px 0;
+
+			&_media {
+				max-width: 1140px;
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		&__img {
+			display: block;
+			margin-right: 25px;
+		}
+
+		&__title {
+			margin-bottom: 22px;
+			text-align: left;
+		}
+
+		&__text {
+			color: #000;
+		}
+
+		&__background {
+			padding: 0;
+			background: none;
+		}
+	}
+}

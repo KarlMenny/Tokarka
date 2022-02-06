@@ -1,0 +1,21 @@
+.map {
+	padding: 35px 0 32px;
+	background-color: #F2F2F2;
+
+	&__iframe {
+		@include size(100%, 334px);
+	}
+
+	@media (min-width: 992px) {
+		padding: 90px 0 87px;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 100px 0 97px;
+	}
+
+	& iframe .gm-style:nth-child(1) {
+		display: none !important;
+	}
+}
+
