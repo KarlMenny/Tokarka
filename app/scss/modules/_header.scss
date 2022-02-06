@@ -1,0 +1,262 @@
+.header {
+	position: relative;
+	background: #303030 url(../images/header.jpg) center;
+	background-size: cover;
+
+	&__container {
+		position: relative;
+		padding-bottom: 98px;
+		height: 532px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 20px;
+		width: 100%;
+		max-width: 148px;
+	}
+
+	&__top {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	&__menu,
+	&__phones {
+		display: none;
+	}
+
+	&__wrapper {
+		text-align: center;
+	}
+
+	&__logoname {
+		display: block;
+		margin-bottom: 45px;
+		font-size: 3.4375rem;
+		font-weight: 900;
+		letter-spacing: 0.14em;
+		color: rgba(255, 255, 255, 0.24);
+	}
+
+	&__title {
+		margin-bottom: 8px;
+		font-size: 2.3125rem;
+		font-weight: 900;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+	}
+
+	&__text {
+		margin-bottom: 53px;
+		font-size: 1.0625rem;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+	}
+
+	&__btn {
+		display: inline-block;
+		width: 249px;
+		border: 3px solid transparent;
+		border-radius: 50px;
+		font-size: 1.0625rem;
+		font-weight: 600;
+		line-height: 37px;
+		text-transform: uppercase;
+		color: #fff;
+		background: #F66545;
+
+		&:hover {
+			border-color: #D45134;
+		}
+	}
+
+	&__scroll-down {
+		display: none;
+		@include size(34px, 15px);
+		position: absolute;
+		bottom: -35px;
+		background-image: url(../images/icons/arrow-down.svg);
+
+		&:hover {
+			bottom: -42px;
+		}
+	}
+
+	@media (min-width: 768px) {
+
+		&__container {
+			height: 629px;
+			padding: 17px 0 100px;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		&__logo {
+			position: static;
+		}
+
+		&__wrapper {
+			padding-top: 0;
+		}
+
+		&__title {
+			font-size: 2.8125rem;
+		}
+
+		&__menu {
+			padding-top: 28px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		&__item {
+			margin-right: 52px;
+
+			&_mr {
+				margin-right: 0;
+			}
+		}
+
+		&__link {
+			position: relative;
+			font-size: 1.125rem;
+			font-weight: 600;
+			letter-spacing: 0.03em;
+			color: #fff;
+
+			&:hover:before {
+				left: 0;
+				right: 0;
+			}
+
+			&::before {
+				content: "";
+				background: #F66545;
+				height: 3px;
+				position: absolute;
+				bottom: -7px;
+				left: 50%;
+				right: 50%;
+				-webkit-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+			}
+		}
+
+		&__phones {
+			display: none;
+		}
+	}
+
+	@media (min-width: 992px) {
+
+		&__top {
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+		}
+
+		&__logoname {
+			font-size: 5.875rem;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		height: 100vh;
+
+		&__container {
+			height: 769px;
+		}
+
+		&__top {
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+		}
+
+		&__logoname {
+			font-size: 7.0625rem;
+			margin-bottom: 60px;
+		}
+
+		&__link {
+			font-size: 1rem;
+
+			&::before {
+				height: 2px;
+			}
+		}
+
+		&__phones {
+			padding-top: 28px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		&__phone {
+			margin-right: 30px;
+			font-family: $roboto;
+			font-weight: 500;
+			font-size: 0.875rem;
+			letter-spacing: 0.03em;
+
+			&_mr {
+				margin-right: 0;
+			}
+		}
+
+		&__scroll-down {
+			display: initial;
+		}
+	}
+
+	@media (max-width: 518px) {
+
+		&__container {
+			padding-bottom: 70px;
+		}
+
+		&__logoname {
+			font-size: 2.3125rem;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (max-width: 349px) {
+
+		&__logoname {
+			font-size: 2rem;
+		}
+	}
+}

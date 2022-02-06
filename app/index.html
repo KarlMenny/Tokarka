@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="KarlMennY">
+	<meta name="keywords" content="токарные, фрезерные, сверлильные, строгальные, долбежные, зубофрезерные работы, шлифовка металла, металлообработка, оборудование для производства, услуги токаря">
+	<meta name="description" content="Завод изготовитель ASTEN проводит ✓токарные ✓фрезерные ✓сверлильные ✓шлифовальные ✓стогальные ✓долбежные ✓зубофрезерные работы и изготовление промышленного оборудования. Звоните ☎ +38 (096) 04-21-777">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Токарные работы - завод изготовитель ASTEN</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="js/modules/bootstrap.min.css">
+	<link rel="stylesheet" href="js/modules/slick.css">
+	<link rel="stylesheet" href="css/global.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="header__container container">
+			<div class="header__top">
+				<img class="header__logo" src="images/logo.svg" alt="Логотип">
+				<ul class="header__menu">
+					<li class="header__item"><a href="#about-us" class="header__link">О нас</a></li>
+					<li class="header__item"><a href="#services" class="header__link">Услуги</a></li>
+					<li class="header__item"><a href="#map" class="header__link">Карта</a></li>
+					<li class="header__item header__item_mr"><a href="#contacts" class="header__link">Контакты</a></li>
+				</ul>
+				<ul class="header__phones">
+					<li class="header__phone">+38 (099) 55-16-001</li>
+					<li class="header__phone header__phone_mr">+38 (096) 04-21-777</li>
+				</ul>
+			</div>
+			<div class="header__wrapper">
+				<span class="header__logoname">ASTENMETAL</span>
+				<h1 class="header__title">ТОКАРНО-ФРЕЗЕРНЫЕ<br> РАБОТЫ</h1>
+				<p class="header__text">и другие услуги по металлообработке</p>
+				<a href="#in-focus" class="header__btn">Оставить заявку</a>
+			</div>
+			<a class="header__scroll-down" href="#about-us"></a>
+		</div>
+
+		<!-- BURGER BUTTON-->
+		<div class="burger-btn">
+			<span class="burger-btn__strip"></span>
+			<span class="burger-btn__strip"></span>
+			<span class="burger-btn__strip burger-btn__strip_mb"></span>
+		</div>
+		<!-- BURGER BUTTON-->
+
+		<!-- BURGER MENU-->
+		<div class="burger-menu">
+			<ul class="burger-menu__items">
+				<li class="burger-menu__item"><a href="#about-us" class="burger-menu__link">О нас</a></li>
+				<li class="burger-menu__item"><a href="#services" class="burger-menu__link">Услуги</a></li>
+				<li class="burger-menu__item"><a href="#map" class="burger-menu__link">Карта</a></li>
+				<li class="burger-menu__item"><a href="#contacts" class="burger-menu__link burger-menu__link_mb">Контакты</a></li>
+			</ul>
+			<ul class="burger-menu__phones">
+				<li class="burger-menu__phone">+38 (099) 55-16-001</li>
+				<li class="burger-menu__phone">+38 (096) 04-21-777</li>
+				<li class="burger-menu__phone burger-menu__phone_mb">+38 (063) 60-75-307</li>
+			</ul>
+		</div>
+		<!-- BURGER MENU-->
+	</header>
+	<main class="main">
+		<section class="about-us" id="about-us">
+			<div class="about-us__color">
+				<div class="about-us__container about-us__container_media">
+					<img class="about-us__img" src="images/about-us_alone.jpg" alt="О нас">
+					<div class="about-us__description">
+						<h2 class="about-us__title">О НАС</h2>
+						<div class="about-us__background">
+							<p class="about-us__text"><span class="about-us__paragraph">Токарно-фрезерные работы относятся к одной из основных сфер деятельности нашего предприятия.</span><span class="about-us__paragraph">Данные работы подразумевают совмещение технологий токарной и фрезерной обработки в процессе производства деталей.</span>Заказы на выполнение токарно-фрезерных работ выполняются <span class="about-us__allotment">с максимальным качеством и в кратчайшие сроки.</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-us__process container">
+				<img class="about-us__process-img" src="images/scheme_work.png" alt="Как мы работаем">
+			</div>
+		</section>
+		<section class="services" id="services">
+			<div class="services__container container">
+				<h2 class="services__title">УСЛУГИ</h2>
+				<div class="row">
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_tok')">
+							<img class="services__img" src="images/services/tok.jpg" alt="Токарные работы">
+							<span class="services__text">Токарные работы</span>
+						</div>
+						<div class="gallery gallery_tok">
+							<div class="gallery__close" onclick="closeSlider('.gallery_tok')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/1.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/2.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/3.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/4.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/5.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/6.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/7.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/8.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/9.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/10.jpg" alt="Токарные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/tok/11.jpg" alt="Токарные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_frez')">
+							<img class="services__img" src="images/services/frez.jpg" alt="Фрезерные работы">
+							<span class="services__text">Фрезерные работы</span>
+						</div>
+						<div class="gallery gallery_frez">
+							<div class="gallery__close" onclick="closeSlider('.gallery_frez')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/frez/1.jpg" alt="Фрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/frez/2.jpg" alt="Фрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/frez/3.jpg" alt="Фрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/frez/4.jpg" alt="Фрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/frez/5.jpg" alt="Фрезерные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_sverl')">
+							<img class="services__img" src="images/services/sverl.jpg" alt="Сверлильные работы">
+							<span class="services__text">Сверлильные работы</span>
+						</div>
+						<div class="gallery gallery_sverl">
+							<div class="gallery__close" onclick="closeSlider('.gallery_sverl')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/sverl/1.jpg" alt="Сверлильные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/sverl/2.jpg" alt="Сверлильные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/sverl/3.jpg" alt="Сверлильные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_shlif')">
+							<img class="services__img" src="images/services/shlif.jpg" alt="Шлифовальные работы">
+							<span class="services__text">Шлифовальные работы</span>
+						</div>
+						<div class="gallery gallery_shlif">
+							<div class="gallery__close" onclick="closeSlider('.gallery_shlif')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/shlif/1.jpg" alt="Шлифовальные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/shlif/2.jpg" alt="Шлифовальные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/shlif/3.jpg" alt="Шлифовальные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/shlif/4.jpg" alt="Шлифовальные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/shlif/5.jpg" alt="Шлифовальные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_st-dolb')">
+							<img class="services__img" src="images/services/st-dolb.jpg" alt="Строгальные, долбежные работы">
+							<span class="services__text">Строгальные, долбежные<br> работы</span>
+						</div>
+						<div class="gallery gallery_st-dolb">
+							<div class="gallery__close" onclick="closeSlider('.gallery_st-dolb')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/st-dolb/1.jpg" alt="Строгальные, долбежные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/st-dolb/2.jpg" alt="Строгальные, долбежные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_zub')">
+							<img class="services__img" src="images/services/zubo.jpg" alt="Зубофрезерные работы">
+							<span class="services__text">Зубофрезерные работы</span>
+						</div>
+						<div class="gallery gallery_zub">
+							<div class="gallery__close" onclick="closeSlider('.gallery_zub')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/zub/1.jpg" alt="Зубофрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/zub/2.jpg" alt="Зубофрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/zub/3.jpg" alt="Зубофрезерные работы">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/zub/4.jpg" alt="Зубофрезерные работы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper services__wrapper_mb col-md-6 col-lg-4">
+						<div class="services__service" onclick="callSlider('.gallery_oborud')">
+							<img class="services__img" src="images/services/oborud.jpg" alt="Изготовление промышленного оборудования">
+							<span class="services__text services__text_size">Изготовление прессформ и штампов</span>
+						</div>
+						<div class="gallery gallery_oborud">
+							<div class="gallery__close" onclick="closeSlider('.gallery_oborud')">×</div>
+							<div class="gallery__arrows"></div>
+							<div class="gallery__slider container">
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/oborud/1.jpg" alt="Изготовление промышленного оборудования">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/oborud/2.jpg" alt="Изготовление промышленного оборудования">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/oborud/3.jpg" alt="Изготовление промышленного оборудования">
+								</div>
+								<div class="gallery__slide">
+									<img class="gallery__img" src="images/gallery/oborud/4.jpg" alt="Изготовление промышленного оборудования">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__wrapper services__wrapper_mb services__wrapper_display col-md-6 col-lg-8">
+						<div class="services__service services__service_mod">
+							<p class="services__describe">Токарная обработка металлов и другие виды услуг по металлообработке предлагаются на выгодных условиях. Предприятие осуществляет токарную обработку металлов всех видов по самым привлекательным на сегодняшний день ценам.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="services__text-block">Токарная обработка металлов и другие виды услуг по металлообработке предлагаются на выгодных условиях. Предприятие осуществляет токарную обработку металлов всех видов по самым привлекательным на сегодняшний день ценам.</p>
+		</section>
+		<div class="map" id="map">
+			<iframe class="map__iframe" src="https://maps.google.com/maps?width=49.552240&amp;height=34.510091&amp;hl=ru&amp;q=poltava%2C%20komarova%2C%205+(Asten)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"></iframe>
+		</div>
+	</main>
+	<footer class="footer" id="contacts">
+		<div class="footer__container container">
+			<a class="footer__arrow-up" href="#header">
+				<img class="footer__img-arrow-up" src="images/arrow_up.svg" alt="Наверх">
+			</a>
+			<div class="footer__content">
+				<div class="form footer__form">
+					<h3 class="form__title">Свяжитесь с нами</h3>
+					<form id="form__content" class="form__content">
+						<input class="form__field" id="in-focus" type="text" name="name" placeholder="Ваше имя" required>
+						<input class="form__field" type="email" name="email" placeholder="Ваш e-mail" required>
+						<textarea class="form__field form__field_additionally form__field_mb" placeholder="Что Вас интересует?" name="msg" required></textarea>
+						<input id="form__button" class="form__btn" type="submit" value="Отправить">
+					</form>
+				</div>
+				<!-- break-flex-item -->
+				<div class="footer__new-string"></div>
+				<!-- break-flex-item -->
+				<div class="footer__wrapper">
+					<div class="footer__contacts">
+						<h3 class="footer__title">Контакты</h3>
+						<p class="footer__adress">г. Полтава, ул. Комарова, 5<br>tovvybor97@gmail.com</p>
+						<ul class="footer__data">
+							<li class="footer__phone">+38 (099) 55-16-001</li>
+							<li class="footer__phone">+38 (096) 04-21-777</li>
+							<li class="footer__phone">+38 (063) 60-75-307</li>
+						</ul>
+						<ul class="footer__share">
+							<li class="footer__icon">
+								<a href="https://www.facebook.com/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-ASTEN-metal-553448524693824/" class="footer__link" target="_blank">
+									<img class="footer__img" src="images/icons/facebook.svg" alt="Фейсбук">
+								</a>
+							</li>
+							<li class="footer__icon">
+								<a href="https://www.instagram.com/astenmetal/" class="footer__link" target="_blank">
+									<img class="footer__img" src="images/icons/instagram.svg" alt="Твиттер">
+								</a>
+							</li>
+							<li class="footer__icon footer__icon_mr">
+								<a href="https://twitter.com/?lang=ru" class="footer__link" target="_blank">
+									<img class="footer__img" src="images/icons/twitter.svg" alt="Инстаграм">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__services">
+					<h3 class="footer__title footer__title_mb">Услуги</h3>
+					<ul class="footer__works">
+						<li class="footer__work">Токарные работы</li>
+						<li class="footer__work">Фрезерные работы</li>
+						<li class="footer__work">Сверлильные работы</li>
+						<li class="footer__work">Шлифовальные работы</li>
+						<li class="footer__work">Строгальные, долбёжные работы</li>
+						<li class="footer__work">Зубофрезерные работы</li>
+						<li class="footer__work footer__work_mb">Изготовление оборудования</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<adress class="footer__protect-rights">
+			<a class="footer__link-author" href="http://sitweb.com.ua/" target="_blank">&#174 All rights reserved</a>
+		</adress>
+	</footer>
+
+	<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Уведомление</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/modules/jquery.min.js"></script>
+	<script src="js/modules/bootstrap.min.js"></script>
+	<script src="js/modules/slick.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+
+	<script>
+		let form = $('#form__content');
+		let formBtn = $('#form__button');
+		let modal = $('#emailModal');
+		let modalHead = $('#emailModal .modal-title');
+		let modalBody = $('#emailModal .modal-body');
+		let styleHeadSuccess = {
+			'color': 'green',
+		};
+		let styleHeadError = {
+			'color': 'red',
+		};
+		let styleBody = {
+			'color': 'black',
+		};
+
+		$(formBtn).on('click', function (e) {
+			e.preventDefault();
+			let formData = $(form).serialize();
+
+			$.ajax({
+				type: 'POST',
+				url: '/mail.php',
+				data: formData
+			}).done(function (msg) {
+				$(modal).modal('show');
+
+				if (msg === 'Попытка отправить сообщение не удалась. Свяжитесь с нами с помощью номеров для исправление ошибки.') {
+					$(modalHead).css(styleHeadError);
+				} else {
+					$(modalHead).css(styleHeadSuccess);
+				}
+
+				$(modalBody).text(msg).css(styleBody);
+				setTimeout(function () {
+					$(modal).modal('hide');
+				}, 5000);
+			}).fail(function (msg) {
+				msg = 'Попытка отправить сообщение не удалась. Свяжитесь с нами с помощью номеров для исправление ошибки';
+				$(modal).modal('show');
+				$(modalHead).css(styleHeadError);
+				$(modalBody).text(msg).css(styleBody);
+				setTimeout(function () {
+					$(modal).modal('hide');
+				}, 5000);
+			});
+		})
+	</script>
+
+</body>
+</html>
